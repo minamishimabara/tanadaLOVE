@@ -76,3 +76,27 @@
 #u1291-5,#u1291-5-bw{z-index:322;min-height:33px;}
 #muse_css_mq,.html{background-color:#FFFFFF;}body{position:relative;min-width:320px;}
 #u1475_img,#u1538_img,#u1467_img,#u1615_img,#u1482_img,#u1562_img,#u1572_img,#u1584_img,#u1627_img{width:100%;}@font-face{font-family:'__Noto Sans CJK JP_5';src:url('../fonts/notosanscjkjp-black.eot');src:local('☺'), url('../fonts/notosanscjkjp-black.woff') format('woff');font-weight:900;font-style:normal;}@font-face{font-family:'__Noto Sans CJK JP_5';src:url('../fonts/notosanscjkjp-light.eot');src:local('☺'), url('../fonts/notosanscjkjp-light.woff') format('woff');font-weight:300;font-style:normal;}@font-face{font-family:'__Noto Sans CJK JP_5';src:url('../fonts/notosanscjkjp-regular.eot');src:local('☺'), url('../fonts/notosanscjkjp-regular.woff') format('woff');font-weight:400;font-style:normal;}@font-face{font-family:'__Noto Sans CJK JP_5';src:url('../fonts/notosanscjkjp-medium.eot');src:local('☺'), url('../fonts/notosanscjkjp-medium.woff') format('woff');font-weight:500;font-style:normal;}@font-face{font-family:'__Noto Sans CJK JP_5';src:url('../fonts/notosanscjkjp-bold.eot');src:local('☺'), url('../fonts/notosanscjkjp-bold.woff') format('woff');font-weight:700;font-style:normal;}
+.shienBtn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  right: 30px;
+  background: #f7c600;
+  color: white;
+  font-size: 20px;
+  border-radius: 2px;
+  line-height: 60px;
+  height: 60px;
+  margin: 0 20px;
+  text-align: center;
+  color:#05a1c6;text-decoration: none;outline: none;
+}
+.shienBtn:hover{text-decoration:underline;}
+.detailAside02 {
+  position: relative;
+  background: #fdfdfd;
+  border-top: 1px solid #f2f2f2;
+  padding: 16px 0;
+  border-radius: 0 0 4px 4px;
+}
