@@ -9,6 +9,7 @@
     <script type="text/javascript">
       // Update the 'nojs'/'js' class on the html node
       document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
     </script>
     <title>棚田愛</title>
     <!-- CSS -->
@@ -58,6 +59,20 @@
             rotating:   2,
             overlay:    "images/pattern.png"
         });
+        // #で始まるアンカーをクリックした場合に処理
+        $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 1000; // ミリ秒
+          // アンカーの値取得
+          var href= $(this).attr("href");
+          // 移動先を取得
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          // 移動先を数値で取得
+          var position = target.offset().top;
+          // スムーススクロール
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
     });
     </script>
 
@@ -68,11 +83,11 @@
         <div class="browser_width" id="u548-bw">
           <div id="u548"><!-- simple frame --></div>
         </div>
-        <a class="nonblock nontext anim_swing clearfix" id="u1022-4" href="index.html#home" title="HOME"><!-- content --><p>HOME</p></a>
-        <a class="nonblock nontext anim_swing clearfix" id="u1018-4" href="index.html#minamishimabarahackathon" title="棚田愛とは"><!-- content --><p>棚田愛とは</p></a>
-        <a class="nonblock nontext anim_swing clearfix" id="u1028-4" href="index.html#aboutminamishimabaracity" title="プラン"><!-- content --><p>プラン</p></a>
-        <a class="nonblock nontext anim_swing clearfix" id="u1034-4" href="index.html#info" title="参加資格"><!-- content --><p>参加資格</p></a>
-        <a class="nonblock nontext anim_swing clearfix" id="u1031-4" href="index.html#moushikomi" title="参加を申し込む"><!-- content --><p>参加を申し込む</p></a>
+        <a class="nonblock nontext anim_swing clearfix" id="u1022-4" href="#home" title="HOME"><!-- content --><p>HOME</p></a>
+        <a class="nonblock nontext anim_swing clearfix" id="u1018-4" href="#minamishimabarahackathon" title="棚田愛とは"><!-- content --><p>棚田愛とは</p></a>
+        <a class="nonblock nontext anim_swing clearfix" id="u1028-4" href="#aboutminamishimabaracity" title="プラン"><!-- content --><p>プラン</p></a>
+        <a class="nonblock nontext anim_swing clearfix" id="u1034-4" href="#info" title="参加資格"><!-- content --><p>参加資格</p></a>
+        <a class="nonblock nontext anim_swing clearfix" id="u1031-4" href="#moushikomi" title="参加を申し込む"><!-- content --><p>参加を申し込む</p></a>
       </div>
       <a class="anchor_item colelem" id="home"></a>
       <div class="browser_width" id="u990-bw">
